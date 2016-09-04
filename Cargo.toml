@@ -19,6 +19,7 @@ chrono = "0.3.0"
 chrono-humanize = "0.0.9"
 error-chain = "0.10"
 libcratesio = "0.0.3"
+handlebars = "0.26"
 pager = "0.10"
 
 [dependencies.clap]
