@@ -110,12 +110,12 @@ impl Report {
         for flag in &self.flags {
             output = output +
                      &match *flag {
-                Flag::Repository => krate.print_repository(self.verbose),
-                Flag::Documentation => krate.print_documentation(self.verbose),
-                Flag::Downloads => krate.print_downloads(self.verbose),
-                Flag::Homepage => krate.print_homepage(self.verbose),
-                Flag::Default => reportv(krate, self.verbose),
-            }
+                          Flag::Repository => krate.print_repository(self.verbose),
+                          Flag::Documentation => krate.print_documentation(self.verbose),
+                          Flag::Downloads => krate.print_downloads(self.verbose),
+                          Flag::Homepage => krate.print_homepage(self.verbose),
+                          Flag::Default => reportv(krate, self.verbose),
+                      }
         }
         output
     }
