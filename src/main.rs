@@ -155,7 +155,9 @@ fn get_crate(response: &Response) -> Option<crates::Crate> {
 //     println!("{:#?}", item);
 // }
 
-fn print_report<T>(r: Result<T>) where T: fmt::Display {
+fn print_report<T>(r: Result<T>)
+    where T: fmt::Display
+{
     match r {
         Ok(text) => println!("\n{}\n", text),
         Err(err) => println!("\n{}\n", err),
