@@ -20,7 +20,7 @@ use crates::PrintCrateInfo;
 mod crates;
 mod errors;
 
-const CARGO: &str = "cargo";
+const CARGO: &'static str = "cargo";
 
 #[derive(Clone, Debug, PartialEq)]
 enum Flag {
