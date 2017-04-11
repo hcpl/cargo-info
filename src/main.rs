@@ -77,7 +77,8 @@ impl Report {
     }
 
     pub fn report(&self, name: &str) -> Result<String> {
-        let response = CratesIO::query(name).chain_err(|| "crates.io query failed")?;
+        let response = CratesIO::query(name)
+            .chain_err(|| "crates.io query failed")?;
         let mut output = String::new();
 
         if self.json {
@@ -98,7 +99,7 @@ impl Report {
         if self.verbose {
             match response.as_json() {
                 Ok(json) => format!("{:#}", json),
-                _ => String::new()
+                _ => String::new(),
             }
         } else {
             response.raw_data().to_owned()
