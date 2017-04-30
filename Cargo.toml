@@ -18,9 +18,8 @@ gitlab = { repository = "imp/cargo-info" }
 chrono = "0.3"
 chrono-humanize = "0.0.8"
 error-chain = "0.10"
+libcratesio = "0.0.2"
 pager = "0.10"
-libcratesio = "0.0.1"
-#libcratesio = { git = "https://gitlab.com/imp/libcratesio-rs.git"}
 
 [dependencies.clap]
 features = ["unstable"]
