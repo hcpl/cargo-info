@@ -2,7 +2,7 @@
 name = "cargo-info"
 version = "0.5.9"
 dependencies = [
- "chrono 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "chrono 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "chrono-humanize 0.0.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "clap 2.24.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "error-chain 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -87,11 +87,11 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "chrono"
-version = "0.3.1"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "num 0.1.37 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)",
  "time 0.1.37 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -100,7 +100,7 @@ name = "chrono-humanize"
 version = "0.0.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "chrono 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "chrono 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -273,7 +273,7 @@ name = "libcratesio"
 version = "0.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "chrono 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "chrono 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "error-chain 0.10.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "reqwest 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -497,11 +497,6 @@ version = "0.9.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "serde"
-version = "1.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-
-[[package]]
 name = "serde_codegen_internals"
 version = "0.14.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -683,7 +678,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum bitflags 0.8.2 (registry+https://github.com/rust-lang/crates.io-index)" = "1370e9fc2a6ae53aea8b7a5110edbd08836ed87c88736dfabccade1c2b44bff4"
 "checksum byteorder 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "c40977b0ee6b9885c9013cd41d9feffdd22deb3bb4dc3a71d901cc7a77de18c8"
 "checksum cfg-if 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "de1e760d7b6535af4241fca8bd8adf68e2e7edacc6b29f5d399050c5e48cf88c"
-"checksum chrono 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "d9123be86fd2a8f627836c235ecdf331fdd067ecf7ac05aa1a68fbcf2429f056"
+"checksum chrono 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "158b0bd7d75cbb6bf9c25967a48a2e9f77da95876b858eadfabaa99cd069de6e"
 "checksum chrono-humanize 0.0.9 (registry+https://github.com/rust-lang/crates.io-index)" = "5ac98ae0f530c16ca2ded24388cd7982450ecfd4be11d039b4b8926a3bde01e3"
 "checksum clap 2.24.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b7541069be0b8aec41030802abe8b5cdef0490070afaa55418adea93b1e431e0"
 "checksum core-foundation 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)" = "25bfd746d203017f7d5cbd31ee5d8e17f94b6521c7af77ece6c9e4b2d4b16c67"
@@ -732,7 +727,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum security-framework-sys 0.1.14 (registry+https://github.com/rust-lang/crates.io-index)" = "5bacdada57ea62022500c457c8571c17dfb5e6240b7c8eac5916ffa8c7138a55"
 "checksum semver 0.1.20 (registry+https://github.com/rust-lang/crates.io-index)" = "d4f410fedcf71af0345d7607d246e7ad15faaadd49d240ee3b24e5dc21a820ac"
 "checksum serde 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)" = "34b623917345a631dc9608d5194cc206b3fe6c3554cd1c75b937e55e285254af"
-"checksum serde 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "3b46a59dd63931010fdb1d88538513f3279090d88b5c22ef4fe8440cfffcc6e3"
 "checksum serde_codegen_internals 0.14.2 (registry+https://github.com/rust-lang/crates.io-index)" = "bc888bd283bd2420b16ad0d860e35ad8acb21941180a83a189bb2046f9d00400"
 "checksum serde_derive 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)" = "978fd866f4d4872084a81ccc35e275158351d3b9fe620074e7d7504b816b74ba"
 "checksum serde_json 0.9.10 (registry+https://github.com/rust-lang/crates.io-index)" = "ad8bcf487be7d2e15d3d543f04312de991d631cfe1b43ea0ade69e6a8a5b16a1"
